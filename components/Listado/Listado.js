@@ -5,9 +5,9 @@ export function Listado({ citas, setCitas}) {
    // console.log(citas)
     return (
         <>
-            {citas.map((item, id) => (
+            {citas.map(item => (
                 <Cita
-                    key = {id}
+                    key = {item.id}
                     citas = {citas}
                     setCitas = {setCitas}
                     mascota={item.mascota}
@@ -15,7 +15,7 @@ export function Listado({ citas, setCitas}) {
                     fecha={item.fecha}
                     hora={item.hora}
                     sintomas={item.sintomas}
-                    id={id}
+                    id={item.id}
                 />
             ))}
         </>

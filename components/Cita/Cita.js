@@ -5,7 +5,7 @@ import { Boton } from "/components/Boton/Boton";
 export function Cita({ id, citas, setCitas, mascota, dueño, fecha, hora, sintomas }) {
 
   const eliminarCita = (id) => {
-    console.log("Eliminar cita:", mascota);
+    console.log("Eliminar cita:", id);
     const nuevoArrayCitas = citas.filter(citas => citas.id !== id);
     setCitas(nuevoArrayCitas);
     console.log("Nuevo Array:" + nuevoArrayCitas);
