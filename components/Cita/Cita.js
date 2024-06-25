@@ -1,9 +1,14 @@
 
 import "./Cita.css";
 import { Boton } from "/components/Boton/Boton";
+import { useEffect } from "react";
 
 export function Cita({ id, citas, setCitas, mascota, dueño, fecha, hora, sintomas }) {
 
+  //const localCitas = localStorage.getItem("localCitas");
+  
+
+  
   const eliminarCita = (id) => {
     console.log("Eliminar cita:", id);
     const nuevoArrayCitas = citas.filter(citas => citas.id !== id);
